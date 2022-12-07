@@ -27,25 +27,40 @@
 
 // COMEÇA AQUI EXERCÍCIO 2
 
-let array = [[10,0], [3,5], [5,8]]
+// let array = [[10,0], [3,5], [5,8]]
 
-pontosDeOnibus(array)
+// pontosDeOnibus(array)
 
-function pontosDeOnibus (array){
-    let resultado = 0
+// function pontosDeOnibus (array){
+//     let resultado = 0
 
-    array.forEach(x => {
-        resultado += x[0]- x[1]
-    })
+//     array.forEach(x => {
+//         resultado += x[0]- x[1]
+//     })
 
-    console.log(resultado)
-    return resultado
-
-}
+//     console.log(resultado)
+//     return resultado
+// }
 
 // TERMINA AQUI
 
+// COMEÇA AQUI EXERCÍCIO 3
 
+let numeros = [21, 13, 2, 7, 5, 14, 7, 15, 9, 10]
+
+bingo(numeros)
+
+function bingo(numeros){
+    let alfabeto = ['a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    let bingo = 'bingo'
+    let resultado = []
+    alfabeto.forEach(x, index => {
+       
+    })
+
+
+
+}
 
 
 
