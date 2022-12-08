@@ -46,29 +46,23 @@
 
 // COMEÇA AQUI EXERCÍCIO 3
 
-let numeros = [21, 13, 2, 7, 5, 14, 7, 15, 9, 10]
+let numeros = [21, 13, 2, 7, 5, 14, 6, 15, 9, 10]
 
 bingo(numeros)
 
-function bingo(numeros){
-    let alfabeto = ['a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    let bingo = 'bingo'
-    let resultado = []
-    alfabeto.forEach(x, index => {
-       
-    })
+function bingo(numeros) {
+    let bingo = [2, 9, 14, 7, 15]
+    let contagem = bingo.every(x => numeros.includes(x))
 
+    if(contagem){
+        console.log("Ganhou!!!")
+        return "Ganhou!!!"
+    }
+
+    else{
+        console.log("Perdeu!!!")
+        return "Perdeu!!!"
+    }
 
 
 }
-
-
-
-
-   
-
-
-
-
-
-
