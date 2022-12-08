@@ -27,33 +27,42 @@
 
 // COMEÇA AQUI EXERCÍCIO 2
 
-let array = [[10,0], [3,5], [5,8]]
+// let array = [[10,0], [3,5], [5,8]]
 
-pontosDeOnibus(array)
+// pontosDeOnibus(array)
 
-function pontosDeOnibus (array){
-    let resultado = 0
+// function pontosDeOnibus (array){
+//     let resultado = 0
 
-    array.forEach(x => {
-        resultado += x[0]- x[1]
-    })
+//     array.forEach(x => {
+//         resultado += x[0]- x[1]
+//     })
 
-    console.log(resultado)
-    return resultado
-
-}
+//     console.log(resultado)
+//     return resultado
+// }
 
 // TERMINA AQUI
 
+// COMEÇA AQUI EXERCÍCIO 3
+
+let numeros = [21, 13, 2, 7, 5, 14, 6, 15, 9, 10]
+
+bingo(numeros)
+
+function bingo(numeros) {
+    let bingo = [2, 9, 14, 7, 15]
+    let contagem = bingo.every(x => numeros.includes(x))
+
+    if(contagem){
+        console.log("Ganhou!!!")
+        return "Ganhou!!!"
+    }
+
+    else{
+        console.log("Perdeu!!!")
+        return "Perdeu!!!"
+    }
 
 
-
-
-
-   
-
-
-
-
-
-
+}
