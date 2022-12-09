@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de carros</title>
-    <script src="funções.js"></script>
+    <script src="funções.js" defer></script>
 </head>
 <body>
     
-    <form action="form">
-        Marca<input type="text" name="marca" id="marca">
-        Modelo<input type="text" name="modelo" id="modelo">
-        Ano<input type="text" name="ano" id="ano">
-        Valor<input type="text" name="valor" id="valor">
-        Cor<input type="text" name="cor" id="cor">
-        Automático: True<input type="radio" name="automático" id="true">
-        False<input type="radio" name="automático" id="false">
+    <form id="form" action="form">
+        Marca<input id="marca" type="text" name="marca" id="marca">
+        Modelo<input id="modelo" type="text" name="modelo" id="modelo">
+        Ano<input id="ano" type="text" name="ano" id="ano">
+        Valor<input id="valor" type="text" name="valor" id="valor">
+        Cor<input id="cor" type="text" name="cor" id="cor">
+        Automático: True<input id="automatico" type="radio" name="automático" id="true" value="true">
+        False<input id="automático" type="radio" name="automático" id="false" value="false">
         <p>
-            <button type="submit">Enviar</button>
+            <button id="submit" type="submit">Enviar</button>
+            <button id="recuperar" type="submit">Recuperar</button>
         </p>
     </form>
 
